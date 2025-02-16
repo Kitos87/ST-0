@@ -1,10 +1,12 @@
 // Copyright Nikita Korovin
 
 int gcd(int a, int b) {
-  if (a < b)
+  if (a < b) {
     swap(a, b);
-  if (b == 0)
+  }
+  if (b == 0) {
     return a;
-  else
+  } else {
     return gcd(b, a - b);
+  }
 }
